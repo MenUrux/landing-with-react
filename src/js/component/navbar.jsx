@@ -1,8 +1,5 @@
 import React from "react"; // 1) Importar react
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
 // 2) Crear el componente
 //create your first component
 const Navbar = () => {
