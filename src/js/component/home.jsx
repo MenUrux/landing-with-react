@@ -1,19 +1,28 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Navbar from "./navbar";
+import Jumbotron from "./jumbotron";
 import Card from "./card";
+import Footer from "./footer";
+
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
 const Home = () => {
 	return (
-		<div className="text-center">
-			<div className="d-flex gap-4">
-				<Card />
-				<Card />
-				<Card />
-				<Card />
+		<>
+			<Navbar />
+			<div className="container">
+				<Jumbotron />
+				<div className="gap-4 d-flex flex-sm-row flex-column row justify-content-center">
+					<Card />
+					<Card />
+					<Card />
+					<Card />
+				</div>
 			</div>
-		</div>
+			<Footer />
+		</>
 	);
 };
 

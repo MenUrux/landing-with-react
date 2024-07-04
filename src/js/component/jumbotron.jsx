@@ -7,14 +7,11 @@ import rigoImage from "../../img/rigo-baby.jpg";
 //create your first component
 const Jumbotron = () => {
     return (
-        <div className="d-flex gap-4">
-            <div className="card" style={{ width: "18rem" }}>
-                <img src={rigoImage} className="card-img-top" alt="Rigo Baby" />
-                <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" className="btn btn-primary">Find out more!</a>
-                </div>
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">A Warm Welcome!</h1>
+                <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+                <button class="btn btn-primary btn-lg" type="button">Call to action</button>
             </div>
         </div>
     );
